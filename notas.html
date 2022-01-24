@@ -17,6 +17,7 @@
   <link rel="stylesheet" href="estilos/estilosindex.css" />
   <link rel="stylesheet" href="estilos/guardar.css" />
   <link rel="stylesheet" href="estilos/slider.css" />
+  <link rel="stylesheet" href="estilos/section-semester.css">
 
   <title>Sistema-Académico♥</title>
 </head>
@@ -29,30 +30,85 @@
   </div>
   <div class="contenedor">
     <div style="text-align: center;" class="logo"><a href="index.html"><img align="center"
-                src="imagenes/ESPEtransparente.png" width="350px" height="76px"></a></div>
+          src="imagenes/ESPEtransparente.png" width="350px" height="76px"></a></div>
     <nav style="background-color:  rgb(13, 95, 2);" class="menu">
 
-        <div id="logo">
+      <div id="logo">
 
-        </div>
-        <div id="menu">
-            <a href="index.html"><img align="center" src="imagenes/casa.png" width="35px" height="35px">
-                INICIO</a>
-        
-            <a href="notas.html"><img align="center" src="./imagenes/estudiar.png" width="45px" height="45px">
-                REGISTRO DE NOTAS</a>
+      </div>
+      <div id="menu">
+        <a href="index.html"><img align="center" src="imagenes/casa.png" width="35px" height="35px">
+          INICIO</a>
 
-
-            <a href=""><img align="center" src="./imagenes/buscando.png" width="45px" height="45px">
-            </a><input type="search" name="nombre" placeholder="Buscar">
+        <a href="notas.html"><img align="center" src="./imagenes/estudiar.png" width="45px" height="45px">
+          REGISTRO DE NOTAS</a>
 
 
-        </div>
+        <a href=""><img align="center" src="./imagenes/buscando.png" width="45px" height="45px">
+        </a><input type="search" name="nombre" placeholder="Buscar">
+
+
+      </div>
     </nav>
-</div>
+  </div>
   <br />
 
   <br />
+
+  <!-- Sección para los semestres, materias y estudiantes (visualizar) -->
+  <section class="content-semester">
+    <div class="container-semester">
+      <header>
+        <h1>Tabla de semestres y sus materias</h1>
+        <div class="semester-btns">
+          <button class="btnS active" id="semester-1">Semestre 1</button>
+          <button class="btnS active" id="semester-1">Semestre 2</button>
+          <button class="btnS active" id="semester-1">Semestre 3</button>
+          <button class="btnS active" id="semester-1">Semestre 4</button>
+          <button class="btnS active" id="semester-1">Semestre 5</button>
+          <button class="btnS active" id="semester-1">Semestre 6</button>
+          <button class="btnS active" id="semester-1">Semestre 7</button>
+          <button class="btnS active" id="semester-1">Semestre 8</button>
+        </div>
+      </header>
+      <section class="materias-options">
+        <label for="genero">LISTADO DE LAS MATERIAS</label>
+        <select name="materias-option" id="materias-option">
+          <option value="" id="op"></option>
+          <option value="" id="op"></option>
+          <option value="" id="op"></option>
+          <option value="" id="op"></option>
+          <option value="" id="op"></option>
+        </select>
+        <div>
+          <button class="btnO active" id="btnOption">MOSTRAR</button>
+        </div>
+    </div>
+    <div id="position-container">
+      <h4">Usted se enceuntra en: <span id="posicion-actual"></span></h4>
+    </div>
+    <div id="estudaintes-container">
+      <h4">La materia cuenta con: <span id="cantidad-estudiantes"></span> estudiantes.</h4>
+    </div>
+    <table class="tabla_semesters" style="width: 100%;">
+      <thead>
+        <tr>
+          <th>N_Lista</th>
+          <th>Nombres</th>
+          <th>Semestre</th>
+          <th>Nota 1</th>
+          <th>Nota 2</th>
+          <th>Nota 3</th>
+          <th>Asistencia</th>
+          <th>Promedio <br>
+          <th>Resultado</th>
+        </tr>
+      </thead>
+      <tbody id="muestra_semesters">
+
+      </tbody>
+    </table>
+  </section>
 
   <section class="main">
     <div class="contenedor">
@@ -103,9 +159,7 @@
         <div class="loader" id="loader"></div>
       </main>
     </div>
-    <script src="js/ajax.js"></script>
-    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.js"></script>
-    <script type="text/javascript" src="../javaScript/javaSc.js"></script>
+    -->
   </section>
 
   <footer>
@@ -180,8 +234,9 @@
 </script>
 <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.js"></script>
 <script type="text/javascript" src="js/javaSc.js"></script>
-<script type="text/javascript" src="js/JscaSc2.js"></script>
+<!-- <script type="text/javascript" src="js/JscaSc2.js"></script> -->
 
 <script src="JS/index.js"></script>
+<script src="JS/section-semester.js"></script>
 
 </html>
